@@ -1,3 +1,17 @@
-.darkMode {
+:root {
+    --bg-color: white;
+    --font-color: black;
+    --btn-color: lightgrey;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+
+button {
     display: inline;
+    width: 75px;
+    background-color: var(--btn-color);
+    color: var(--font-color);
 }

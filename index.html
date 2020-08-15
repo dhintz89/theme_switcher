@@ -5,13 +5,29 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>Theme Switcher</title>
       <link href='./themes/main.css' type='text/css' rel='stylesheet'></script>
-      <link href='./themes/darkmode.css' type='text/css' rel='stylesheet' id="colorScheme"></script>
   </head>
   <body> 
     <p>Here's some text</p>
-    <button class="darkTheme" id="darkThemeBtn" onclick="changeTheme()">Dark Theme</button>
-    <button class="lightTheme" id="lightThemeBtn" onclick="changeTheme()">Light Theme</button>
-    <button class="blueTheme" id="blueThemeBtn" onclick="changeTheme()">Blue Theme</button>
+    <div class="bg-colors">
+      <h2>Background Colors:</h2>
+      <button class="bg-color" id="bg-white" data-value="white" onclick="apply()">White</button>
+      <button class="bg-color" id="bg-black" data-value="black" onclick="apply()">Black</button>
+      <button class="bg-color" id="bg-blue" data-value="darkblue" onclick="apply()">Blue</button>
+      <button class="bg-color" id="bg-orange" data-value="orange" onclick="apply()">Orange</button>
+    </div>
+    <div class="font-colors">
+      <h2>Font Colors:</h2>
+      <button class="font-color" id="font-black" data-value="black" onclick="apply()">Black</button>
+      <button class="font-color" id="font-white" data-value="white" onclick="apply()">White</button>
+      <button class="font-color" id="font-cyan" data-value="cyan" onclick="apply()">Cyan</button>
+      <button class="font-color" id="font-red" data-value="red" onclick="apply()">Red</button>
+    </div>
+    <div class="button-colors">
+      <h2>Button Color:</h2>
+      <button class="btn-color" id="btn-grey" data-value="grey" onclick="apply()">Grey</button>
+      <button class="btn-color" id="btn-tan" data-value="tan" onclick="apply()">Tan</button>
+      <button class="btn-color" id="btn-green" data-value="green" onclick="apply()">Green</button>
+    </div>
     <script src='script.js'></script>
   </body>
 </html>
